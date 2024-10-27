@@ -1,0 +1,156 @@
+/* General page styling */
+body {
+    background-color: #f4f4f1;
+    font-family: 'Forum', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: #202124;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #FEEA3B; /* Google-inspired yellow */
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    font-size: 1.8rem;
+    color: #202124; /* Dark text for readability */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #202124; /* Dark text */
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+    color: #EA4335; /* Google-inspired red on hover */
+}
+
+/* Main about section styling */
+.about {
+    padding: 50px;
+    text-align: left;
+    background-color: #FEEA3B; /* Google-inspired yellow */
+    color: #202124; /* Dark text for readability */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+    line-height: 1.6;
+}
+
+/* Section heading */
+.about h2 {
+    font-size: 2.2rem;
+    color: #202124; /* Black text for professional look */
+    font-weight: bold;
+    background-color: #FEEA3B;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
+}
+
+/* Subheadings styling */
+.about h3 {
+    font-size: 1.8rem;
+    color: #202124; /* Black text for professional look */
+    margin-top: 30px;
+    padding: 8px 0;
+    border-bottom: 2px solid #202124;
+}
+
+/* Paragraphs */
+.about p {
+    font-size: 1.1rem;
+    color: #202124;
+    margin: 15px 0;
+}
+
+/* List styling */
+.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about ul li {
+    font-size: 1.1rem;
+    color: #202124;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* Custom bullet points for list items */
+.about ul li::before {
+    content: "•";
+    color: #34A853; /* Google-inspired green */
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Link styling */
+.about a {
+    color: #174EA6;
+    text-decoration: underline;
+}
+
+.about a:hover {
+    color: #EA4335;
+    text-decoration: none;
+}
+
+/* Box-shadow hover effect */
+.about:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.container {
+    width: 90%; /* Instead of 800px */
+    max-width: 1200px; /* Optional max-width for larger screens */
+    margin: auto; /* Center the container */
+}
+.navbar .nav-links {
+    display: flex; /* Flexbox for the nav items */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.navbar .nav-links li {
+    margin-left: 15px; /* Use smaller margins */
+}
+/* About Section Image Styling */
+/* About Section Image Styling */
+.about-image {
+    width: 60%; /* Reduced width */
+    max-width: 300px; /* Smaller max-width for larger screens */
+    margin: 20px auto; /* Center-align with spacing */
+    display: block; /* Center the image in block mode */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+@media (max-width: 768px) {
+    .about-image {
+        width: 70%; /* Reduced width for mobile */
+        max-width: 80%; /* Smaller max-width on small screens */
+    }
+}

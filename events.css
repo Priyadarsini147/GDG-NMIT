@@ -1,0 +1,195 @@
+/* General page styling */
+body {
+    background-color: #FFFFFF; /* Keep the background white for readability */
+    font-family: 'Forum', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: #202124; /* Dark text for readability */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #EA4335; /* Google-inspired red */
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    font-size: 1.8rem;
+    color: #FFFFFF; /* White text for contrast */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* White text */
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+    color: #FEEA3B; /* Google-inspired yellow on hover */
+}
+
+/* Events section styling */
+.events {
+    padding: 50px;
+    max-width: 800px;
+    margin: 30px auto;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.events h2 {
+    font-size: 2.2rem;
+    color: #EA4335; /* Google-inspired red */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Event list styling */
+.event-list {
+    margin-bottom: 40px;
+}
+
+.event-list h3 {
+    font-size: 1.8rem;
+    color: #EA4335; /* Google-inspired red */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #EA4335; /* Red underline */
+    padding-bottom: 5px;
+}
+
+/* Event item styling */
+.event {
+    background-color: #FCE5E5; /* Light red background for event items */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.event h4 {
+    font-size: 1.5rem;
+    color: #EA4335; /* Google-inspired red */
+    margin-bottom: 10px;
+}
+
+.event p {
+    font-size: 1.1rem;
+    color: #202124; /* Dark text for readability */
+}
+
+/* Register button styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #EA4335; /* Google-inspired red */
+    color: #FFFFFF; /* White text for contrast */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #D93025; /* Darker red for hover effect */
+}
+
+.event-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 600px; /* Limit maximum width */
+    border-radius: 8px; /* Optional: rounded corners */
+    margin-top: 10px; /* Space above the image */
+    display: block; /* Center the image */
+    margin-left: auto; 
+    margin-right: auto;
+}
+.container {
+    width: 90%; /* Instead of 800px */
+    max-width: 1200px; /* Optional max-width for larger screens */
+    margin: auto; /* Center the container */
+}
+.navbar .nav-links {
+    display: flex; /* Flexbox for the nav items */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.navbar .nav-links li {
+    margin-left: 15px; /* Use smaller margins */
+}
+/* Feedback Section Styling */
+.feedback-section {
+    background-color: #FCE5E5; /* Light red background to match event items */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for inner spacing */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-top: 20px; /* Space above the feedback section */
+}
+
+/* Feedback Form Label Styling */
+.feedback-section label {
+    font-size: 1rem; /* Standard size for labels */
+    color: #202124; /* Dark text for readability */
+}
+
+/* Feedback Form Select Styling */
+.feedback-section select {
+    padding: 8px; /* Padding for better touch targets */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #EA4335; /* Border color matching the theme */
+    margin-bottom: 10px; /* Space below the select */
+}
+
+/* Feedback Form Textarea Styling */
+.feedback-section textarea {
+    width: 100%; /* Full width */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #EA4335; /* Matching border color */
+    padding: 10px; /* Padding for comfort */
+    resize: vertical; /* Allow vertical resizing */
+    margin-bottom: 10px; /* Space below the textarea */
+}
+
+/* Feedback Submit Button Styling */
+.feedback-section button {
+    padding: 10px 20px; /* Button padding */
+    background-color: #EA4335; /* Google-inspired red */
+    color: #FFFFFF; /* White text for contrast */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor for buttons */
+}
+
+.feedback-section button:hover {
+    background-color: #D93025; /* Darker red on hover */
+}
+/* About Section Image Styling */
+/* Event Image Styling */
+.event-image, .join-image {
+    width: 60%; /* Reduced width */
+    max-width: 300px; /* Smaller max-width for larger screens */
+    margin: 20px auto; /* Center-align with spacing */
+    display: block; /* Center the image in block mode */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+@media (max-width: 768px) {
+    .event-image, .join-image {
+        width: 70%; /* Adjust width for mobile */
+        max-width: 80%; /* Override max-width on small screens */
+    }
+}

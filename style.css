@@ -1,0 +1,215 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Forum', Courier, monospace;
+}
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: #4285F4; /* Google Blue */
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    display: flex;              /* Use flexbox for layout */
+    align-items: center;  
+}
+.navbar .logo img {
+    height: 50px;              /* Set a specific height for the logo */
+    width: auto;               /* Maintain aspect ratio */
+    margin-right: 10px;        /* Add space between logo and text */
+}
+.navbar .logo:hover {
+    color: #FFD700; /* Gold for a subtle hover effect */
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 25px;
+}
+
+.navbar .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #F4B400; /* Google Yellow */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0F9D58 60%, #FFD700); /* Blend of Google Green and Gold */
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-top: 15px;
+    letter-spacing: 0.8px;
+    color: #f1f1f1;
+}
+/* Footer Styling */
+footer {
+    background-color: #4285F4; /* Google Blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #F4B400; /* Google Yellow for hover effect */
+}
+
+/* Adjustments for Hero Section with Slider */
+.hero {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.slide h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.slide p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #f1f1f1;
+}
+
+/* Main Content Section */
+.main-content {
+    background-color: #F1F3F4; /* Light background */
+    padding: 40px 20px;
+}
+
+.content-columns {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-item {
+    flex: 1;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.section-item h2 {
+    color: #4285F4; /* Google Blue */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.section-item p {
+    color: #5F6368;
+    font-size: 1em;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .content-columns {
+        flex-direction: column;
+    }
+
+    .section-item {
+        margin-bottom: 20px;
+    }
+}
+
+footer {
+    background-color: #f45742; /* Google Blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 40px; /* Adjust if necessary */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.navbar .nav-links {
+    display: flex; /* Flexbox for the nav items */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.navbar .nav-links li {
+    margin-left: 15px; /* Use smaller margins */
+}

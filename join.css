@@ -1,0 +1,170 @@
+/* General page styling */
+body {
+    background-color: #FFFFFF; /* Keep the background white for readability */
+    font-family: 'Forum', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: #202124; /* Dark text for readability */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #34A853; /* Google-inspired green */
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    font-size: 1.8rem;
+    color: #FFFFFF; /* White text for contrast */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* White text */
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+    color: #FEEA3B; /* Google-inspired yellow on hover */
+}
+
+/* Join section styling */
+.join {
+    padding: 50px; /* Increased padding for better spacing */
+    background: #F0F4F1; /* Light green background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px; /* Center and restrict width */
+    margin: 30px auto; /* Center the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.join h2 {
+    font-size: 2.2rem;
+    color: #34A853; /* Google-inspired green */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Form styling */
+#join-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Make full width */
+    max-width: 400px; /* Restrict width */
+}
+
+#join-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#join-form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #C8E6C9; /* Light green border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    padding: 10px;
+    background-color: #34A853; /* Google-inspired green */
+    color: #FFFFFF; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #2C8A42; /* Darker green for hover effect */
+}
+
+.why-join {
+    background-color: #E3F2FD; /* Light blue background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the section */
+}
+
+.why-join h3 {
+    font-size: 1.8rem;
+    color: #174EA6; /* Google-inspired blue */
+    margin-bottom: 10px;
+}
+
+.why-join p,
+.why-join ul {
+    font-size: 1rem;
+    color: #202124; /* Dark text for readability */
+}
+.container {
+    width: 90%; /* Instead of 800px */
+    max-width: 1200px; /* Optional max-width for larger screens */
+    margin: auto; /* Center the container */
+}
+.navbar .nav-links {
+    display: flex; /* Flexbox for the nav items */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.navbar .nav-links li {
+    margin-left: 15px; /* Use smaller margins */
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items on top of each other */
+    }
+    
+    .content-columns {
+        flex-direction: column; /* Stack content columns */
+    }
+
+    .section-item {
+        margin-bottom: 20px; /* Space between stacked items */
+    }
+
+    .hero h1 {
+        font-size: 2em; /* Reduce font size on mobile */
+    }
+
+    .hero p {
+        font-size: 1em; /* Reduce font size on mobile */
+    }
+}
+/* Style for the Join Us image */
+
+/* Style for the Join Us image */
+.join-image {
+    width: 80%; /* Slightly reduced width within the container */
+    max-width: 500px; /* Decreased max-width for larger screens */
+    margin: 20px auto; /* Center-align and add spacing */
+    display: block; /* Centers the image in block mode */
+    border-radius: 10px; /* Rounded corners to match section style */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+@media (max-width: 768px) {
+    .join-image {
+        width: 80%; /* Reduced width for mobile */
+        max-width: 90%; /* Further limit width on smaller screens */
+    }
+}

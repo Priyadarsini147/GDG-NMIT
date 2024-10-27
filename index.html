@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDG NMIT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for LinkedIn Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM1w6Z60UbkU7s6E3IH9xN4u2G5k4J3P4IL4x" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Navbar -->
+    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="gdsclogo.jpg"  style="height: 50px; width: auto;">
+            GDSC NMIT
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="join.html">Join Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero Section with Slider -->
+    <section class="hero">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <h1>Welcome to GDSC NMIT</h1>
+                    <p>Empowering Developers, Innovating Together</p>
+                </div>
+                <div class="slide">
+                    <h1>Join Our Events</h1>
+                    <p>Stay updated with the latest tech trends and workshops</p>
+                </div>
+                <div class="slide">
+                    <h1>Become a Member</h1>
+                    <p>Be a part of a vibrant developer community</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section in Newspaper Column Layout -->
+    <section class="main-content">
+        <div class="content-columns">
+            <div class="section-item">
+                <h2>Connect</h2>
+                <p>Meet students interested in developer technologies. All are welcome, including those with diverse backgrounds and different majors.</p>
+            </div>
+            <div class="section-item">
+                <h2>Learn</h2>
+                <p>Gain new skills through hands-on workshops, events, talks, and project-building activities online and in-person.</p>
+            </div>
+            <div class="section-item">
+                <h2>Grow</h2>
+                <p>Build solutions for local problems. Advance your skills, career, and network. Help others learn and give back to your community.</p>
+            </div>
+        </div>
+    </section>
+
+    <body>
+        <!-- Other content -->
+    
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 GDG NMIT. All rights reserved.</p>
+           
+            <a href="privacy-policy.html">Privacy Policy</a> |
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="contact.html">Contact Us</a> 
+            
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+               
+                <a href="https://www.linkedin.com/company/gdsc-nmit/" target="_blank" rel="noopener noreferrer">
+                    <img src="li.png" alt="LinkedIn" style="height: 30px; width: 30px;">
+                </a>
+                <a href="https://www.instagram.com/gdgnmit/" target="_blank" rel="noopener noreferrer">
+                    <img src="in.png" alt="Instagram" style="height: 30px; width: 30px;">
+                </a>
+                <a href="https://www.youtube.com/@gdscnmit/videos" target="_blank" rel="noopener noreferrer">
+                    <img src="you.png" alt="YouTube" style="height: 30px; width: 30px;">
+                </a>
+            </div>
+        </footer>
+    
+        <!-- Optional JS for Slider -->
+        <script>
+           let slideIndex = 0;
+           const slides = document.querySelectorAll(".slide");
+           const slideShow = () => {
+               const totalSlides = slides.length;
+               slides.forEach((slide, index) => {
+                   slide.style.transform = `translateX(-${100 * slideIndex}%)`;
+               });
+               slideIndex = (slideIndex + 1) % totalSlides;
+           };
+           setInterval(slideShow, 4000); // Change every 4 seconds
+        </script>
+    </body>
+    </html>
+    
